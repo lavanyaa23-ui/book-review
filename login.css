@@ -1,0 +1,150 @@
+/* Styles for Login Page */
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Lato:wght@800&family=Merriweather:wght@700&family=Orbitron:wght@800&display=swap');
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url(9c1ec810-98c9-4eea-be53-6fadf91a429a.gif) ;
+    background-attachment: fixed;
+    background-size: cover;  /* Ensures it covers the full screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+}
+.logo {
+    height: 90px; /* Adjust size as needed */
+    width: auto;
+    margin-right: 15px;
+}
+.nav-links {
+    display: flex;
+    gap: 20px; /* Adjust spacing between Home & Login */
+    margin-left: auto; /* Move to the left corner */
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to top , rgb(246, 203, 210), rgb(152, 93, 117));
+color: white;
+padding: 15px 20px;
+text-align: center;
+}
+.logo {
+    width: 80px; /* Adjust logo size */
+    height: auto;
+    margin-right: auto;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    color: rgb(186, 216, 241);
+}
+
+.book-list, .review-form, .login-form, .signup-form {
+    max-width: 600px;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(9, 8, 8, 0.1);
+
+.demo__text{
+    position: absolute;
+    left:0; top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;height: 100%;
+    opacity: 0;
+    transform: translateY(20px);
+    will-change: opacity,transform;
+    pointer-events: none;
+}
+.demo.s--processing
+.demo__text{
+    transition: all 0.4s;
+}
+.demo__text--step-0{
+    opacity: 1;
+    transform: translateY(0);
+}
+.demo__text-dots::before,
+.demo__text-dots::after{
+    content: ".";opacity: 0;
+}
+@keyframes dotAnimation {
+    10%,90%{
+        opacity: 0;
+    }
+    40%,60%{
+        opacity: 1;
+    }
+}
+@keyframes dotAnimation {
+    10%,90%;{
+        opacity: 0;
+    }
+    40%,60%{
+        opacity: 1;
+    }
+    
+}
+}.login-form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-image:url( Captivating\ Pixel\ Art\ from\ Japan.gif) ;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+    text-align: center;
+}
+
+.login-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.login-form input {
+    width: 50%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    
+    display: block;
+    margin: 10px; /* Moves it slightly right */
+    padding: 10px 20px;
+    background-color: #161946;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #3e5bcd;
+}

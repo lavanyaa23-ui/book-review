@@ -1,0 +1,140 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Lato:wght@800&family=Merriweather:wght@700&family=Orbitron:wght@800&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;  /* Ensures it covers the full screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    background-image:url(9c1ec810-98c9-4eea-be53-6fadf91a429a.gif) ;
+    background-attachment: fixed;
+   
+    
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 20px; /* Adjust spacing between Home & Login */
+    margin-left: auto; /* Move to the left corner */
+}
+
+.logo {
+    width: 90px; /* Adjust logo size */
+    height: auto;
+    margin-right: auto;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:linear-gradient(to top , rgb(246, 203, 210), rgb(152, 93, 117));
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(249, 228, 228);
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    color:#ccc
+}
+
+.book-list, .review-form, .login-form, .signup-form {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: contain;
+    background-position: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(252, 245, 245, 0.1);
+}
+
+.book {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.book:hover {
+    background: #ffffff;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 60%;
+    padding: 8px;
+    display: block;
+    margin:10px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 50%;
+    padding: 8px;
+    margin-top: 15px auto;
+    background-color: #e6c5ab;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.signup,login{
+ display:inline-block;
+ padding: 10px 20px;
+ margin:5px;
+}
+.button-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+  }
+  
+  .signup,
+  .login {
+    padding: 10px 20px;
+  }
+
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

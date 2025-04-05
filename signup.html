@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="Screenshot_2025-02-24_100326-removebg-preview.png" alt="Book Haven Logo" class="logo">
+        
+        <nav>
+            <ul>
+                <li><a href="demo.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="signup-form">
+            <h2>Create a New Account</h2>
+            <form id="signupForm">
+                <label for="newUsername">Username:</label>
+                <input type="text" id="username" placeholder="Enter Username" required>
+                
+                <label for="newEmail">Email:</label>
+                <input type="email" id="email" placeholder="Enter Email" required>
+                
+                <label for="newPassword">Password:</label>
+                <input type="password" id="password" placeholder="Enter Password" required>
+                
+                <button type="submit" id="submit">Sign Up</button>
+                <button type="login" id="login">login in</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        // Play sound effect on button click
+        document.getElementById("submit").addEventListener("click", function () {
+            let audio = new Audio("mouse-click-sound-233951.mp3"); // Ensure correct path
+            audio.play();
+        });
+
+        // Handle form submission and redirect
+        document.getElementById("signupForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Get user input values
+            let username = document.getElementById("username").value;
+            let email = document.getElementById("email").value;
+
+            // Store user details in localStorage
+            localStorage.setItem("loggedIn", "true");
+            localStorage.setItem("username", username);
+            localStorage.setItem("email", email);
+
+            // Redirect to user account page
+            window.location.href = "user.html";
+        });
+    </script>
+
+</body>
+</html>

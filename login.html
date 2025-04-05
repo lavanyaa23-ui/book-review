@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+        
+        <img src="Screenshot_2025-02-24_100326-removebg-preview.png" alt="Book Haven Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="demo.html">Home</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="login-form">
+            <h2>Login to Your Account</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <button type="submit"id="submit">Login</button>
+                <script>
+                    document.getElementById("submit").addEventListener("click", function(event) {
+                        event.preventDefault(); // Prevent form submission (optional, if using a form)
+                        
+                        // Redirect to home page
+                        window.location.href = "demo.html"; // Change "index.html" to your home page file
+                    });
+                    let play = document.getElementById("submit");
+
+play.addEventListener("click", function() {
+    let audio = new Audio("mouse-click-sound-233951.mp3"); // Ensure correct path
+    audio.play();
+});
+                </script>
+                
+                
+                
+            </form>
+        </section>
+    </main>
+
+    
+</body>
+</html>

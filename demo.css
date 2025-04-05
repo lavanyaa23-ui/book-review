@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Lato:wght@800&family=Merriweather:wght@700&family=Orbitron:wght@800&display=swap');
+/* styles.css */
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url(9c1ec810-98c9-4eea-be53-6fadf91a429a.gif) ;
+    background-attachment: fixed;
+    background-size: cover;  /* Ensures it covers the full screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to top , rgb(246, 203, 210), rgb(152, 93, 117));
+color: white;
+padding: 15px 20px;
+text-align: center;
+}
+
+.logo {
+    width: 90px; /* Adjust logo size */
+    height: auto;
+    margin-right: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px; /* Adjust spacing between Home & Login */
+    margin-left: auto; /* Move to the left corner */
+}
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.welcome {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent */
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.explore-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #e6c5ab;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.explore-button:hover {
+    background-color: #c5a68a;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.book img {
+    width: 100%;
+    max-height: 700px; /* Shorten the image */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    color: #ddd;
+}
+
+.book-list {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.book {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.book:hover {
+    background: #bc7299;
+}
+
+.review-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-form h2 {
+    text-align: center;
+}
+
+.review-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.review-form input,
+.review-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.review-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.review-form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.contact-us {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-us h2 {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: #e6c5ab;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
